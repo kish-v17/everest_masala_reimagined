@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth; ;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everest</title>
+  <link rel="shortcut icon" href="assets/logo/cropped-favicon-new-32x32.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body style="overflow-x:hidden !important;">
+  <div class="loader">
+            <div class="load">
+                <img src="assets/loader/train.gif">
+                <img src="assets/loader/image 18.png">
+                <img src="assets/loader/image 19.png">
+                <img src="assets/loader/image 20.png">
+                <img src="assets/loader/image 21.png">
+            </div>
+        </div>
+
+  <nav class="flx jcsb">
+    <img src="assets/logo/everest-logo.svg">
+    <ul class="menu">
+      <li><a id="home" style="cursor: pointer;" onclick="scr();">Home</a></li>
+      <li><a href="#Spices">Spices</a></li>
+      <li><a href="#nproducts">Products</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+    <div class="follow flx jcsb" style="gap:2vh;">
+      <button class="Btn" role="button">Follow<i class="ri-instagram-fill "> </i></button>
+      <button class="Btn" role="button">Follow<i class="ri-facebook-fill "> </i></button>
+    </div>
+  </nav>
+
+
+
+  <section class="mcanva">
+    <canvas class="c"> </canvas>
+    <a id="expbtn" href="#banner" class="Btn explore">Explore<i class="ri-arrow-drop-right-line"></i></a>
+  </section>
+
+  <section id="banner" style=" height:100vh;">
+    <div class="flx">
+      <img src="assets/img/Tikhalal_AB-SRK_02-png.webp">
+      <img src="assets/img/Pav-Bhaji_AB-SRK_02-1-png.webp">
+      <img src="assets/img/Shahi-Biryani_AB-SRK_01-png.webp">
+    </div>
+  </section>
+
+  <section id="Spices" style="height: 100vh; overflow: hidden; border-top: 1vh solid lightgray;">
+    <div class="spic flx ">
+      <div class="left flx">
+        <center>
+          <h1>SPICES</h1>
+          <p>India's spices are a symphony for the senses. From the earthy warmth of turmeric to the bright citrus zing
+            of cardamom, each adds a unique note to a dish. These fragrant treasures transform simple ingredients into
+            culinary masterpieces, while boasting health benefits that have been revered for centuries. A sprinkle of
+            spice is all it takes to transport your taste buds on a vibrant journey through India.</p>
+        </center>
+      </div>
+      <div class="right flx jcsa">
+        <img src="assets/img/allspices1.png">
+        <img src="assets/img/allspices3.png">
+        <img src="assets/img/allspices3.png">
+        <img src="assets/img/allspices4.png">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="nproducts" style="height: 100vh; overflow :hidden;">
+    <div class="null"></div>
+    <center>
+      <h1 class="font-bold">Products You Will Love</h1>
+    </center>
+    <div class="flxw jcsa" style="height: 60vh;width:90%; margin: auto;">
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/spices/Frame-39-png.webp" alt="Avatar">
+          </div>
+          <div class="flip-card-back" style="--bg:#cf0909 ;color: white;">
+            <br>
+            <h2>BLENDED SPICES</h2>
+            <p>Nothing can beat the delicious taste of traditional Indian spice blends! Everest’s range of blended
+              spices are hand-crafted & the ingredients are sourced from India’s renowned spice lands, ensuring the
+              taste, aroma, flavour & color remain uncompromised. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/spices/Frame-48-png.webp" alt="Avatar">
+          </div>
+          <div class="flip-card-back" style="--bg:white">
+            <br>
+            <h2>PURE SPICES</h2>
+            <p>Pure spices play an integral part in Indian cuisine irrespective of the zone, state, community or the
+              cooking method and hence occupies a very special place of honor. We, at Everest, believe in offering
+              spices that are rich & authentic. And nothing more speaks of this belief than our range of Pure Spices.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/spices/Frame-49-png.webp" alt="Avatar">
+          </div>
+          <div class="flip-card-back" style="--bg:yellow">
+            <br>
+            <h2>ASAFOETIDA</h2>
+            <p>Add some ‘hing ka tadka’ to your dishes! Rich, strong and soothing Everest Hingraj Powder is made using
+              spices of the highest quality sourced only from the best of farms. We maintain the same standards of
+              purity, freshness and authenticity in every pack, getting their aroma and flavour, consistently right.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/spices/Homepage-png.webp" alt="Avatar">
+          </div>
+          <div class="flip-card-back" style="--bg:skyblue">
+            <br>
+            <h2>TASTEETO</h2>
+            <p>Introducinggg Tasteeto, a range of herbs and seasonings to infuse your meals with lip-smacking flavour
+              and #ChefJaisa taste! Pick your cuisine, grab a bottle of Tasteeto, and let the feasting begin!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#products" class="Btn" style="margin: auto;">Explore<i class="ri-arrow-drop-right-line"></i></a>
+  </section>
+
+
+  <section id="products" style="min-height: 100vh;">
+    <div class="null"></div>
+    <center>
+      <h1 style="font-size: 8vh;" class="font-bold">Products</h1>
+    </center><br><br>
+    <div style="width: 80%; " class="fcenter flx jcse">
+      <a class="btn" style="text-wrap: nowrap;" onclick="scrollx('0vw');">Blended Spices</a>
+      <a class="btn" onclick="scrollx('-100vw');">Pure Spices</a>
+      <a class="btn" onclick="scrollx('-200vw');">Tasteeto</a>
+      <a class="btn" onclick="scrollx('-300vw');">Other</a></div>
+
+    <div class="pconteiner flx">
+      <div class="bs flxw jcc" style="width:100vw !important;;">
+        <div class="flx jcc"><img src="assets/spices/royal-garam-masal-1-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/ambhar-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/sabji-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/pav-bhaji-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/king-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/garam-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/chaat-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/chhole-masala-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-5-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-1-2-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-6-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-8-182x300-png.webp"> </div>
+      </div>
+      <div class="ps flxw jcc " style="width:100vw !important;">
+        <div class="flx jcc"><img src="assets/spices/Frame-2-205x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-12-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Frame-4-205x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/kanda-lasun-front-1-205x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Frame-3-205x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Frame-1-1-205x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/dry-ginger-front-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/dry-mango-front-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/white-pepper-front-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/cumin-front-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-2-2-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/front-11-182x300-png.webp"> </div>
+      </div>
+      <div class="ts flxw jcc " style="width:100vw !important;">
+        <div class="flx jcc"><img src="assets/spices/Product-Listing-Chilli-Flakes-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Product-Listing-Mixed-Herbs-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Product-Listing-Pizza-spice-mix-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Product-Listing-Pink-Salt-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Pasta-spice-mix-Listing-featured-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Product-Listing-Cinnamon-Powder-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/Product-Listing-Black-Pepper-182x300-png.webp"> </div>
+        <div class="flx jcc"><img src="assets/spices/1-2-Pasta-Masala-Product-Listing-182x300-png.webp"> </div>
+      </div>
+      <div class="other flxw jcc  " style="width:100vw !important;">
+        <div class="flx jcc"><img src="assets/spices/front-14-1-204x300-png.webp"></div>
+        <div class="flx jcc"><img src="assets/spices/kesari-milk-masal-png.webp"></div>
+        <div class="flx jcc"><img src="assets/spices/front-2-1-229x300-png.webp"></div>
+        <div class="flx jcc"><img src="assets/spices/hing-powder-front-1-210x300-png.webp"></div>
+        <div class="flx jcc"><img src="assets/spices/hingraj-front-1-202x300-png.webp"></div>
+        <div class="flx jcc"><img src="assets/spices/Ginger-Garlic-Paste-02-1-176x300-png.webp"></div>
+        <div class="flx jcc"><img src="assets/spices/saffron-4-png.webp"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="bg-white w-full" style="background-image: url(assets/img/bg1.jpg);">
+    <div class="timeline">
+        <h2 class="font-bold mb-4"> History of Everest</h2>
+       
+        <div class="div-right" onclick="toggleContent('content-1967')">
+            <div class="dot"><div class="dot-right"></div></div>
+            <div class="year-right">1967</div>
+        </div>
+        <div id="content-1967" class="content content-section">
+            <div class="image-content"><img src="assets/about/1.svg" alt="Image 1974"></div>
+            <div class="text-content">Shri Vadilal Bhai Shah registered the brand Everest and launched first 3 products in the market – Milk Masala, Garam Masala & Tea Masala.</div>
+        </div>
+
+        <div class="div-left" onclick="toggleContent('content-1981')">
+            <div class="year-left">1981</div>
+            <div class="dot"><div class="dot-left"></div></div>
+        </div>
+        <div id="content-1981" class="content content-section">
+            <div class="text-content">Vadibhai’s son Sanjeev Shah joins the organization and works toward building the sales and distribution of the company.</div>
+            <div class="image-content"><img src="assets/about/2.svg" alt="Image 1981"></div>
+        </div>
+
+        <div class="div-right" onclick="toggleContent('content-1982')">
+            <div class="dot"><div class="dot-right"></div></div>
+            <div class="year-right">1982</div>
+        </div>
+        <div id="content-1982" class="content content-section">
+            <div class="image-content"><img src="assets/about/3.svg" alt="Image 1989"></div>
+            <div class="text-content">Everest held its first dealer meet ‘Everest Ki Yadgaar Raat’ to promote the brand and create awareness</div>
+        </div>
+        <div class="div-left" onclick="toggleContent('content-1983')">
+          <div class="year-left">1983</div>
+          <div class="dot"><div class="dot-left"></div></div>
+      </div>
+      <div id="content-1983" class="content content-section">
+          <div class="text-content">Everest created their first television commercial with producer Harish Bhimani and started broadcasting on Doordarshan. In the same year, Everest buys their First Small Factory In Shiv Krupa Industrial Estate In Vikhroli, Mumbai.</div>
+          <div class="image-content"><img src="assets/about/4.svg" alt="Image 1981"></div>
+      </div>
+
+      <div class="div-right" onclick="toggleContent('content-1992')">
+        <div class="dot"><div class="dot-right"></div></div>
+        <div class="year-right">1992</div>
+    </div>
+    <div id="content-1992" class="content content-section">
+        <div class="image-content"><img src="assets/about/5.svg" alt="Image 1974"></div>
+        <div class="text-content">Vadibhai’s Second Son Rajiv Shah Joins The Business. </div>
+    </div>
+
+    <div class="div-left" onclick="toggleContent('content-1996')">
+        <div class="year-left">1996</div>
+        <div class="dot"><div class="dot-left"></div></div>
+    </div>
+    <div id="content-1996" class="content content-section">
+        <div class="text-content">To Meet The Growing Demands, Everest Opens The Second Factory In Mumbai At Kurla Industrial Estate.</div>
+        <div class="image-content"><img src="assets/about/6.svg" alt="Image 1981"></div>
+    </div>
+
+    <div class="div-right" onclick="toggleContent('content-2000')">
+        <div class="dot"><div class="dot-right"></div></div>
+        <div class="year-right">2000</div>
+    </div>
+    <div id="content-2000" class="content content-section">
+        <div class="image-content"><img src="assets/about/7.svg" alt="Image 1989"></div>
+        <div class="text-content">Everest Spices Inaugurates Its Third Factory In Vikhroli, Mumbai.
+        </div>
+    </div>
+    <div class="div-left" onclick="toggleContent('content-2002')">
+      <div class="year-left">2002</div>
+      <div class="dot"><div class="dot-left"></div></div>
+  </div>
+  <div id="content-2002" class="content content-section">
+      <div class="text-content">Everest launches first blended chilli powder under the brand name Tikhalal </div>
+      <div class="image-content"><img src="assets/about/8.webp" alt="Image 1981"></div>
+  </div>
+
+  <div class="div-right" onclick="toggleContent('content-2003')">
+    <div class="dot"><div class="dot-right"></div></div>
+    <div class="year-right">2003</div>
+</div>
+<div id="content-2003" class="content content-section">
+    <div class="image-content"><img src="assets/about/9.webp" alt="Image 1974"></div>
+    <div class="text-content">Everest Won The First Superbrand Award And Has Continued To Achieved ‘Superbrand’ Status Eight Times (2003, 2006, 2009, 2012, 2015, 2017, 2019 & 2021)</div>
+</div>
+
+<div class="div-left" onclick="toggleContent('content-2007')">
+    <div class="year-left">2007</div>
+    <div class="dot"><div class="dot-left"></div></div>
+</div>
+<div id="content-2007" class="content content-section">
+    <div class="text-content">Everest becomes India’s leading Spice brand as per A.C. Nielsen with product range of more than 45 flavours. </div>
+    <div class="image-content"><img src="assets/about/10.webp" alt="Image 1981"></div>
+</div>
+
+<div class="div-right" onclick="toggleContent('content-2010')">
+    <div class="dot"><div class="dot-right"></div></div>
+    <div class="year-right">2010</div>
+</div>
+<div id="content-2010" class="content content-section">
+    <div class="image-content"><img src="assets/about/11.webp" alt="Image 1989"></div>
+    <div class="text-content">Everest exports spices to more than 65 countries.</div>
+</div>
+<div class="div-left" onclick="toggleContent('content-2014')">
+  <div class="year-left">2014</div>
+  <div class="dot"><div class="dot-left"></div></div>
+</div>
+<div id="content-2014" class="content content-section">
+  <div class="text-content">Everest launched Hing under the brand Hingraj.</div>
+  <div class="image-content"><img src="assets/about/12.webp" alt="Image 1981"></div>
+</div>
+
+<div class="div-right" onclick="toggleContent('content-2016')">
+  <div class="dot"><div class="dot-right"></div></div>
+  <div class="year-right">2016</div>
+</div>
+<div id="content-2016" class="content content-section">
+  <div class="image-content"><img src="assets/about/13.webp" alt="Image 1974"></div>
+  <div class="text-content">Everest Introduces Kanda Lahsun Masala & Ropes In Ashok Saraf As Brand Ambassador.</div>
+</div>
+
+<div class="div-left" onclick="toggleContent('content-2017')">
+  <div class="year-left">2017</div>
+  <div class="dot"><div class="dot-left"></div></div>
+</div>
+<div id="content-2017" class="content content-section">
+  <div class="text-content">Indian Film Legend Amitabh Bachchan Becomes The Brand Ambassador Of Everest Spices. In the same year, Everest Spices Inaugurates the Largest Plant In Umbergaon, Gujarat.</div>
+  <div class="image-content"><img src="assets/about/14.webp" alt="Image 1981"></div>
+</div>
+
+<div class="div-right" onclick="toggleContent('content-2018')">
+  <div class="dot"><div class="dot-right"></div></div>
+  <div class="year-right">2018</div>
+</div>
+<div id="content-2018" class="content content-section">
+  <div class="image-content"><img src="assets/about/15.webp" alt="Image 1989"></div>
+  <div class="text-content">Everest Introduces Spices In Jar Packaging</div>
+</div>
+<div class="div-left" onclick="toggleContent('content-2021')">
+<div class="year-left">2021</div>
+<div class="dot"><div class="dot-left"></div></div>
+</div>
+<div id="content-2021" class="content content-section">
+<div class="text-content">Everest Forays Into The Herbs And Seasonings Category With A New Brand Tasteeto As Well As Ginger Garlic Paste.</div>
+<div class="image-content"><img src="assets/about/16.webp" alt="Image 1981"></div>
+</div>
+
+        
+ 
+    </div>
+</section>
+
+<!-- footer & contect us merge-->
+<footer id="contact" class="   w-full  text-white">
+   <div class=" ft flex  justify-around pl-8 pr-8 items-center">
+       <img class="h-[15vh] w0-1/3" src="./assets/logo/everest-logo.svg">
+    <div class="flex fm  justify-between items-center ">
+        <ul class="flex back w-1/3 flex-col  justify-evenly  h-full p-4 mr-20 text-white">
+            <li class="mt-[4vh]"><a onclick="scr();" class="text-black font-ubantu text-[3vh] whitespace-nowrap">Home</a></li>
+            <li class="mt-[4vh]"><a href="#Spices" class="text-black font-ubantu text-[3vh] whitespace-nowrap">Spices</a></li>
+            <li class="mt-[4vh]"><a href="#nproducts" class="text-black font-ubantu text-[3vh] whitespace-nowrap">Products</a></li>
+            <li class="mt-[4vh]"><a href="#about" class="text-black font-ubantu text-[3vh] whitespace-nowrap">About</a></li>
+            <li class="mt-[4vh]"><a href="#contact" class="text-black font-ubantu text-[3vh] whitespace-nowrap">Contect us</a></li>
+            <ul class="menu">
+            </ul>
+        </ul>
+        
+        <ul class="back">
+            <li class="mt-[4vh] text-[3vh] whitespace-nowrap"><i class="ri-map-pin-2-line"></i><a> location</a></li>
+            <li class="mt-[4vh] text-[3vh] whitespace-nowrap"><i class="ri-mail-line"></i> <a>  everest@gmail.com</a></li>
+            <li class="mt-[4vh] text-[3vh] whitespace-nowrap"><i class="ri-phone-line"></i><a> +91 1234567890</a></li>
+        </ul>
+    </div>
+    <div class="font-bold back">
+        <form class=" h-full  p-4">
+
+            <h2 class="font-bold text-center text-[3vh]">Contact Us</h2><br>
+            <label>Your Email</label><br>
+            <input class=" text-green-600 rounded-md bg-white/[.8]" type="email"><br><br>
+            <label>Your Subject</label><br>
+            <input class=" text-green-600 rounded-md bg-white/[.8]" type="text"><br><br>
+            <label>Your message</label><br>
+            <textarea class=" text-green-600 rounded-md bg-white/[.8]"></textarea>
+            <br><br><input class=" border-2 p-2 hover:bg-white hover:text-green-700" type="submit" value="submit">
+        </form>
+    </div>
+   </div>
+   <div class="copy relative p-4 text-center mt-4 bg-green-900"> &copy; Copyright 2024 Dead Squad <span class="absolute right-10 top-0"><i class="ri-facebook-circle-fill blue ri-2x text-white"> </i><i class="ri-youtube-fill blue ri-2x  text-white"> </i><i class="ri-instagram-fill blue ri-2x text-white"> </i></span></div>
+</footer>
+
+  <div class="custom-cursor" id="customCursor"></div>
+  </div>
+
+
+
+
+  <script src="js/script.js"></script>
+  <script>
+
+</script>
+</body>
+
+</html>

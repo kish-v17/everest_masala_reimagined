@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEREST Loading Animation</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            font-size: 5rem;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 2px #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container::before {
+            content: 'EVEREST';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            animation: pourMasala 5s forwards;
+            -webkit-text-stroke: 0;
+            color:maroon;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        @keyframes pourMasala {
+            0% {
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            }
+            100% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        EVEREST
+    </div>
+</body>
+</html>

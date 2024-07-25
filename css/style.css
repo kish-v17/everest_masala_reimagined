@@ -1,0 +1,594 @@
+@font-face {
+    font-family: f1;
+    src: url(DMSerifDisplay-Regular.ttf)
+}
+
+@font-face {
+    font-family: f2;
+    src: url(Prompt-Regular.ttf)
+}
+
+#Spices {
+    background-image: url(../assets/img/bg1.jpg);
+    background-size: 10%;
+    width: 100vw
+}
+
+
+#banner div img {
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+#banner div {
+    animation: marque 10s linear infinite
+}
+.fcenter{margin: auto;text-align: center;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: f2
+}
+
+.Btn {
+    padding: 5vh;
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 110px;
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 #020202;
+    transition-duration: .3s
+}
+
+#nproducts {
+    background-image: url(../assets/img/bg3.webp);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100px;
+    
+}
+#nproducts h1 ,#products h1{
+    
+    color: black;
+    /* margin-top: 5vh; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 8vh
+}
+
+
+#nproducts p {
+    margin-top: 2vh;
+    text-align: center;
+    width: 80%;
+    font-size: x-large
+}
+
+#nproducts img{
+    height: 30vh;
+}
+/*  */
+.flip-card {
+    background-color: transparent;
+    width: 30vh;
+    height:30vh;
+    perspective: 1000px;
+  }
+  .flip-card img{
+    width: 30vh;
+    height:30vh;
+    object-fit:contain;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  section{
+    border-bottom: 1vh solid lightgrey;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 37vh;
+    height:37vh;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-back {
+    border:3px solid black;
+    background-color: var(--bg);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  .flip-card-back h2{
+    font-size: x-large !important;
+  }
+  .flip-card-back p{
+    margin-top: 3vh !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    padding:0 3vh;
+    width: 100% !important;
+    font-size: medium !important;
+  }
+/*  */
+#products{
+    background-image: url(../assets/img/bg4.jpg);
+    background-size: 200px;
+    background-position: center;
+}
+#products .pconteiner div div{
+    height:25vh;
+    width: 25vh;
+    margin: 2.2vw;
+    
+}
+.hide{display: none !important;}
+.bs div,.ps div,.ts div,.other div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bs div{background-image: url(../assets/img/bg7.png);}
+.ps div{background-image: url(../assets/img/bg6.png);}
+.ts div{background-image: url(../assets/img/bg8.png);}
+.other div{background-image: url(../assets/img/bg9.png);}
+.pconteiner{
+    /* width: 90%; */
+    /* overflow: scroll; */
+    width:400vw !important;
+    min-height:70vh;
+    margin:2vh auto;
+
+
+}
+.pconteiner div{
+    transition: 1s;
+    margin:auto;
+}
+
+.pconteiner div div:hover{
+    transform:rotateZ(-45deg);
+}
+.pconteiner div img{
+    transform: rotateZ(45deg);
+    height: 15vh;
+    /* margin-top:3vh ; */
+}
+.btn{
+    padding: 10px;
+    font-size: medium;
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #ffe2cd;
+}
+.Btn i {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: #fff;
+    font-size: x-large;
+    transition-duration: .3s
+}
+
+.Btn:active {
+    transform: translate(3px, 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0 #8c20d4
+}
+
+.Btn:hover {
+    color: transparent
+}
+
+.Btn:hover i {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+    color: #fff
+}
+
+.c {
+    width: 100vw;
+    height: 100vh;
+    /* object-fit: contain */
+}
+
+.custom-cursor {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 1000;
+    border-radius: 50%;
+    opacity: .5
+}
+
+.explore {
+    position: absolute;
+    z-index: 11;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.flxw{
+
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center
+}
+.flx {
+    display: flex;
+    align-items: center;
+    font-size: 2.4vh;
+}
+
+.jcsa {
+    justify-content: space-around
+}
+
+.jcsb {
+    justify-content: space-between
+}
+
+.jcse {
+    justify-content: space-evenly
+}
+.jcc{
+    justify-content: center;
+}
+.load {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    animation: scrolling 10s linear forwards
+}
+
+.load {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    animation: marque 10s linear infinite
+}
+
+.load img {
+    height: 40vh
+}
+
+.load img {
+    height: 40vh
+}
+
+.loader {
+position:fixed;
+top:0;
+left:0;
+height:100vh;
+width:100vw;
+display:flex;
+z-index:12;
+align-items:center;
+overflow: hidden;
+}
+
+.loader {
+background-color:#fff;
+position:fixed;
+top:0;
+left:0;
+height:100vh;
+width:100vw;
+display:flex;
+align-items:center;
+overflow: hidden;
+}
+
+.mcanva {
+    position: relative;
+    height: fit-content
+}
+
+.null {
+    height: 12vh;
+    width: 100%
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #ec7016;
+    pointer-events: none;
+    opacity: 0;
+    animation: fade-out 1s forwards;
+    border-radius: 50%
+}
+
+.spic {
+    width: 100vw
+}
+
+.spic .left {
+    align-self: flex-start;
+    width: 60%;
+    margin-top: 10vh;
+    align-items: center;
+    height: 80vh
+}
+
+.spic .left h1 {
+    margin-top: -5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 15vh
+}
+
+.spic .left p {
+    margin-top: 5vh;
+    text-align: center;
+    width: 80%;
+    font-size: x-large
+}
+
+.spic .right {
+    width: 35%
+}
+
+.spic .right :nth-child(even) {
+    animation: revscrolling 30s linear infinite
+}
+
+.spic .right :nth-child(odd) {
+    animation: scrolling 30s linear infinite
+}
+
+nav {
+    background: #0003;
+    -webkit-backdrop-filter: blur(5px);
+    padding: 3vh 10vh;
+    color: #fff !important;
+    position: fixed;
+    top: 0;
+    font-size: 2vh;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 11
+}
+
+nav .menu {
+    display: flex;
+    gap: 10vh;
+    width: fit-content
+}
+
+nav .menu li {
+    display: inline-block;
+    overflow: hidden
+}
+
+nav .menu li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    transition: 1s
+}
+
+nav .menu li a::after {
+    transition: .5s;
+    left: -100%;
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    border-bottom: 5px solid #bd0202
+}
+
+nav .menu li a:hover::after{
+    left: 0;
+}
+nav .menu li a:hover{
+    color:black;
+    font-weight: 900;
+    font-size: x-large;
+    
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(-100vh)
+    }
+}
+
+@keyframes revscrolling {
+    0% {
+        transform: translateY(-100vh)
+    }
+
+    100% {
+        transform: translateY(0vh)
+    }
+}
+
+@keyframes marque {
+    0% {
+        transform: translateX(0vw)
+    }
+
+    100% {
+        transform: translateX(-175vw)
+    }
+}
+
+#about{
+    padding-bottom:10vh;
+    padding-top: 10vh;
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+}
+
+.timeline h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 8vh;
+}
+.header {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    font-family: Inria Serif, sans-serif;
+    margin-top: 55px;
+}
+
+@media (max-width: 991px) {
+    .div-11 {
+        margin-top: 40px;
+    }
+}
+.dot{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.dot-left {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    
+    background-color: maroon;
+
+     /* Adjust vertical and horizontal margins */
+}
+
+.dot-right {
+    background-color: maroon;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+     /* Adjust vertical and horizontal margins */
+}
+.div-left{
+    margin-left: -100px;
+}
+.div-right{ 
+    margin-right: -120px;
+}
+
+.div-right,
+.div-left {
+    width:20vh;
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between; /* Center items horizontally */
+    margin-top: 1.4vh; /* Adjust top margin */
+}
+
+@media (max-width: 991px) {
+    .div-right,
+    .div-left {
+        margin-top: 4vh;
+        white-space: initial;
+    }
+    .div-left{
+        margin-left: -7.3vw;
+    }
+    .div-right{
+        margin-right: -7.5vw;
+    }
+}
+.content {
+    display: none; 
+    margin: 0 10vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.text-content-left {
+    font-size: 1.5vw;
+    margin-right: 20px;
+}
+
+.text-content-right {
+    font-size: 1.5vw;
+    margin-right: 20vw;
+}
+
+.image-content img {
+    width: 200px;
+    height: auto;
+    margin-right: 20vw;
+}
+
+
+/* ---------------------------------------------- */
+
+footer{
+  background-image: url(../assets/img/bg3.webp);
+  color: black !important; 
+  padding-top: 5vh; 
+}
+
+footer .copy{
+    color: #fff;
+    letter-spacing: 0.3vh;
+}
+.back{
+    width: fit-content;
+    padding: 3vh !important;
+    background: rgba(255, 255, 255, 0.26);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
